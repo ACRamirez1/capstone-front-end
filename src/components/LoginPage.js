@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 
-const Login = (props) => {
+const LoginPage = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -48,4 +48,4 @@ const Login = (props) => {
   );
 };
 
-export default Login;
+export default LoginPage;

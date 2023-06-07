@@ -1,13 +1,15 @@
 import React from "react";
 // import { Box } from "@chakra-ui/react";
 import Quotes from "./Quotes";
-import Login from "./Login";
+import Login from "./LoginPage";
 
 const Home = () => {
   return (
-    <div style={{
-      backgroundColor: "blue"
-    }}>
+    <div
+      style={{
+        backgroundColor: "blue",
+      }}
+    >
       <div>Home</div>
       {/* <Quotes /> */}
       {/* <Login /> */}
