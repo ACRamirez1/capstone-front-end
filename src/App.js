@@ -1,17 +1,26 @@
-import React from'react';
-import Api from './Api.js';
-import './App.css';
-
-
-
+import { useState } from "react";
+import Navigation from "./components/Navigation";
+import { BrowserRouter } from "react-router-dom";
+import Router from "./ApplicationRouter";
+import "./App.css";
+import Login from "./components/Login";
+import Quotes from "./components/Quotes";
+import { Box } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 
 function App() {
-  
+  const [token, setToken] = useState("");
   return (
     <div className="App">
-      <iframe title='test' width='600px' height='1000px' src= 'https://greatergood.berkeley.edu/article/item/what_is_your_purpose_as_a_father' />
-      <Api />
       
+      <Login setToken={setToken} />
+      <Quotes token={token} />
+
+      
+
+      <BrowserRouter>
+      <Router />
+      </BrowserRouter>
     </div>
   );
 }
