@@ -1,12 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-// import { Link, useNavigate } from "react-router-dom";
-import {
-  FormControl,
-  FormLabel,
-  Input,
-} from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
+import { FormControl, FormLabel, Input, Button, Container } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const LoginPage = (props) => {
   const [email, setEmail] = useState("");
@@ -18,33 +14,62 @@ const LoginPage = (props) => {
 
   return (
     <>
-    <FormControl isRequired 
-    className="form" 
-    >
-      <FormLabel>Email</FormLabel>
-      <Input placeholder="email" className="input" onChange={(e) => setEmail(e.target.value)} />
-    </FormControl>
-    <FormControl isRequired>
-      <FormLabel>Password</FormLabel>
-      <Input placeholder="Password" className="input" onChange={(e) => setPassword(e.target.value)} />
-    </FormControl>
-    <Button onClick={(e) => {
-        e.preventDefault();
-        console.log("test")
+    <Navbar />
+    <Container>
+      <FormControl isRequired mb="20px" mt="20px">
+        <FormLabel>Email</FormLabel>
+        <Input
+          placeholder="email"
+          className="input"
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
+        />
+      </FormControl>
+      <FormControl isRequired mb="20px">
+        <FormLabel>Password</FormLabel>
+        <Input
+          placeholder="Password"
+          className="input"
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
+        />
+      </FormControl>
+      <Button
+        onClick={(e) => {
+          e.preventDefault();
+          console.log("test");
 
-        axios.post(
-            "https://capstone-ashen-zeta.vercel.app/login", {
-                email,
-                password
-            }
-        ).then((response) => {
-            console.log(response)
-            props.setToken(response.data.token);
-        })
-    }} colorScheme="teal" variant="outline">
-        Button
+          axios
+            .post("https://capstone-ashen-zeta.vercel.app/login", {
+              email,
+              password,
+            })
+            .then((response) => {
+              console.log(response);
+              props.setToken(response.data.token);
+            });
+
+          setEmail("");
+          setPassword("");
+        }}
+        colorScheme="teal"
+        variant="outline"
+      >
+        Submit
       </Button>
-    </>
+      <p>
+        New User?{" "}
+        <NavLink
+          to="/register"
+          style={{
+            color: "teal",
+          }}
+        >
+          Sign Up!
+        </NavLink>{" "}
+      </p>
+      </Container>
+      </>
   );
 };
 
