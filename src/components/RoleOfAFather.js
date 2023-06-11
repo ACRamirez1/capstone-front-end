@@ -1,12 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Navbar2 from "./Navbar2";
 import {
   Box,
   Card,
   CardBody,
   CardFooter,
-  Divider,
   Flex,
   HStack,
   Heading,
@@ -23,7 +21,6 @@ const WhatIsAFather = () => {
   return (
     <>
       <Navbar />
-      <Navbar2 />
       <VStack pt={20} ml="15vw" mr="15vw">
         <Card p={5} bg="rgb(225,234,236)">
           <Card align="center">

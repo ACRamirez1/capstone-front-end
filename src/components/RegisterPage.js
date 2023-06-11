@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { Container, Flex, FormControl, FormLabel, Input } from "@chakra-ui/react";
+import { Container, FormControl, FormLabel, Input } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 
