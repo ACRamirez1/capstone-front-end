@@ -14,7 +14,7 @@ const LoginPage = (props) => {
 
   return (
     <>
-    <Navbar />
+    
     <Container>
       <FormControl isRequired mb="20px" mt="20px">
         <FormLabel>Email</FormLabel>

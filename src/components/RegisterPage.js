@@ -17,7 +17,7 @@ const RegisterPage = (props) => {
 
   return (
     <>
-    <Navbar />
+    
     <Container>
       <FormControl isRequired mb="20px" mt="20px">
         <FormLabel>Name</FormLabel>

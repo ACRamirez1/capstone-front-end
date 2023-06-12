@@ -21,8 +21,8 @@ const Navbar = () => {
 
   return (
     <Flex as='nav'  alignItems="center" ml="15vw" mr="15vw">
-      <Heading as="h1" fontSize={70} >
-        <ChakraLink as={RouterLink} to="/articles">
+      <Heading as="h1" fontSize={80} >
+        <ChakraLink as={RouterLink} to="/articles" color={'teal'}>
           Fatherhood
         </ChakraLink>
       </Heading>

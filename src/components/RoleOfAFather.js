@@ -20,7 +20,7 @@ import vd005 from "../Cap-images/jeshoots-com-VdOO4_HFTWM-unsplash1.jpg";
 const WhatIsAFather = () => {
   return (
     <>
-      <Navbar />
+      
       <VStack pt={20} ml="15vw" mr="15vw">
         <Card p={5} bg="rgb(225,234,236)">
           <Card align="center">
@@ -41,7 +41,7 @@ const WhatIsAFather = () => {
                   ml={5}
                   mr={5}
                 >
-                  <Heading as="h1" mt={0} pb={5}>
+                  <Heading as="h1" mt={0} pb={5} fontFamily={'-moz-initial'} fontSize={'5xl'}>
                     Role of a Father
                   </Heading>
                   <Text fontSize={20}>

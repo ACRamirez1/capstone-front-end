@@ -20,11 +20,13 @@ import image8 from "../Cap-images/The Importance of a Father in a Childs Life.pn
 import image9 from "../Cap-images/The Next Generation of Fathers.png";
 import image10 from "../Cap-images/What Is Your Purpose as a Father.png";
 import image11 from "../Cap-images/What are the 3 Primary Roles of a Father.png";
+import Subscribe from "./Subscribe";
+import Connect from "./Connect";
 
 const Articles = () => {
   return (
     <>
-      <Navbar />
+      
       <Card  bg="rgb(225,234,236)">
         <SimpleGrid
           spacing={10}
@@ -222,6 +224,9 @@ const Articles = () => {
           </Card>
         </SimpleGrid>
       </Card>
+
+      <Subscribe />
+      <Connect />
     </>
   );
 };
