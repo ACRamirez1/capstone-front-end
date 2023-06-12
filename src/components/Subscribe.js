@@ -20,7 +20,7 @@ const Subscribe = () => {
     <>
       <Navbar />
 
-      <Card bg="rgb(225,234,236)" height="60vh" mt='10' >
+      <Card bg="rgb(225,234,236)" height="60vh" mt='20' >
         <VStack
           justifyContent='center'
           height="100%"

@@ -58,7 +58,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">10 Qualities of a good Dad</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -75,7 +75,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">The Evolving Role of a Father</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -92,7 +92,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">Changing roles and responsibilites of Fathers</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -109,7 +109,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">Does the Modern Working Father Really Exist? Yes!</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -126,7 +126,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">How to Be a Good Father: Tips & Advice for Dads</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -143,7 +143,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">The Daddy Factor: How Fathers Support Development</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -160,7 +160,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">The Importance of a Father in a Child's Life</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -177,7 +177,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">The Next Generation of Fathers</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -194,7 +194,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">What is your Purpose as a Father?</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -211,7 +211,7 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Sofa</Heading>
+                <Heading size="md">What are the Three Primary Roles of a Father?</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a

@@ -45,7 +45,7 @@ const WhatIsAFather = () => {
                     Role of a Father
                   </Heading>
                   <Text fontSize={20}>
-                  The role of a father is multifaceted and can vary based on cultural, societal, and individual factors. Traditionally, fathers have been seen as providers and protectors within the family unit, but the understanding of fatherhood has evolved over time. It's important to note that the role of a father can be fulfilled in various ways, and each father's style and approach may differ. Ultimately, the role of a father is to be actively involved in their children's lives, providing love, support, guidance, and being a positive presence as they grow and develop into well-rounded individuals.
+                  From the moment a child is conceived, a father plays a vital role in their development and growth. His love, presence, and guidance shape their sense of self, their values, and their understanding of the world. A father provides a sense of stability and support while creating a culture for his children to explore and learn. A father's involvement in his children's lives promotes their emotional well-being, fostering self-confidence and a sense of belonging. He is a source of inspiration for his children to fully embrace their God endowed identity. His unconditional love will shape them into sympathetic, responsible, and confident individuals. -Eric Letz
                   </Text>
                 </Box>
               </HStack>
