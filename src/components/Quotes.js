@@ -5,7 +5,6 @@ import { Box, Flex, Image, Text, List, Heading } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const Quotes = (props) => {
-  console.log("is running");
   const [quotes, setQutoes] = useState([]);
   const [author, setAuthor] = useState([]);
   const [showElement, setShowElement] = React.useState(false);
@@ -20,11 +19,14 @@ const Quotes = (props) => {
         },
       })
       .then((response) => {
-        // console.log(response)
         setQutoes(response.data);
         setAuthor(response.data);
       });
   }, [props.token]);
+
+  useEffect(() => {
+
+  }, [author])
 
   const handleClick = () => {
     navigate("/articles");
@@ -38,7 +40,6 @@ const Quotes = (props) => {
 
   return (
     <div>
-      {/* <a href="" */}
       <Image
         src={logo}
         alt="Background Image"

@@ -1,8 +1,8 @@
-import Navbar from "./Navbar";
 import {
   Box,
   Card,
   HStack,
+  Heading,
   Link,
   Table,
   TableCaption,
@@ -15,12 +15,13 @@ import {
 import mapbg from "../Cap-images/art_deco_blue_background.jpg";
 import GoogleMapReact from 'google-map-react';
 
-const Connect = (props) => {
+const Connect = () => {
   return (
     <>
       
 
       <Card bg="rgb(225,234,236)" height="100vh" mt={20}>
+        
         <HStack>
           <Box bgImage={mapbg} width="65%" h="600">
             <Table backgroundImage="url({mapbg})">
@@ -112,7 +113,9 @@ const Connect = (props) => {
             </GoogleMapReact>
           </Box>
         </HStack>
+        <Heading alignSelf={'center'} p={'5'} fontSize={'60'}>Find your Community</Heading>
       </Card>
+      
     </>
   );
 };

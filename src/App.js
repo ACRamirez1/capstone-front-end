@@ -21,7 +21,6 @@ function App() {
       
       <BrowserRouter>
       <Navbar />
-      {/* <NavbarSub /> */}
         {!isLoggedIn ? (
           <Routes>
             <Route path="/" element={<LoginPage setToken={setToken} />} />
@@ -30,8 +29,6 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<Quotes token={token} />} />
-            {/* <Route path="/quotes" element={<Quotes />} /> */}
-            {/* Authenticated routes go here */}
             <Route path='/articles' element={<Articles token={token} />} />
             <Route path='/roleofafather' element={<RoleOfAFather token={token} />} />
             <Route path='/subscribe' element={<Subscribe token={token} />} />

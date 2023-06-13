@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import {
   Box,
   Card,
@@ -20,7 +19,6 @@ import vd005 from "../Cap-images/jeshoots-com-VdOO4_HFTWM-unsplash1.jpg";
 const WhatIsAFather = () => {
   return (
     <>
-      
       <VStack pt={20} ml="15vw" mr="15vw">
         <Card p={5} bg="rgb(225,234,236)">
           <Card align="center">
@@ -41,11 +39,28 @@ const WhatIsAFather = () => {
                   ml={5}
                   mr={5}
                 >
-                  <Heading as="h1" mt={0} pb={5} fontFamily={'-moz-initial'} fontSize={'5xl'}>
+                  <Heading
+                    as="h1"
+                    mt={0}
+                    pb={5}
+                    fontFamily={"-moz-initial"}
+                    fontSize={"5xl"}
+                  >
                     Role of a Father
                   </Heading>
                   <Text fontSize={20}>
-                  From the moment a child is conceived, a father plays a vital role in their development and growth. His love, presence, and guidance shape their sense of self, their values, and their understanding of the world. A father provides a sense of stability and support while creating a culture for his children to explore and learn. A father's involvement in his children's lives promotes their emotional well-being, fostering self-confidence and a sense of belonging. He is a source of inspiration for his children to fully embrace their God endowed identity. His unconditional love will shape them into sympathetic, responsible, and confident individuals. -Eric Letz
+                    From the moment a child is conceived, a father plays a vital
+                    role in their development and growth. His love, presence,
+                    and guidance shape their sense of self, their values, and
+                    their understanding of the world. A father provides a sense
+                    of stability and support while creating a culture for his
+                    children to explore and learn. A father's involvement in his
+                    children's lives promotes their emotional well-being,
+                    fostering self-confidence and a sense of belonging. He is a
+                    source of inspiration for his children to fully embrace
+                    their God endowed identity. His unconditional love will
+                    shape them into sympathetic, responsible, and confident
+                    individuals. -Eric Letz
                   </Text>
                 </Box>
               </HStack>
@@ -64,7 +79,7 @@ const WhatIsAFather = () => {
             <GridItem>
               <Box>
                 <List spacing={5}>
-                  <li >
+                  <li>
                     1. Nurturing and emotional support: Fathers play a crucial
                     role in providing emotional support and fostering a sense of
                     security for their children. They offer love, affection, and
@@ -79,7 +94,7 @@ const WhatIsAFather = () => {
                     their own actions and behaviors.
                   </li>
                   <li>
-                  3. Provision and protection: Fathers often take on the
+                    3. Provision and protection: Fathers often take on the
                     responsibility of providing for their families financially.
                     They work to meet the family's needs, ensuring a stable and
                     secure environment. Fathers also play a role in protecting
@@ -87,13 +102,12 @@ const WhatIsAFather = () => {
                     creating a sense of safety.
                   </li>
                   <li>
-                    4. Parental partnership: Modern fathers are
-                    increasingly involved in the day-to-day care of their
-                    children. They actively participate in parenting tasks like
-                    feeding, bathing, changing diapers, and helping with
-                    homework. Active involvement strengthens the bond between
-                    fathers and their children and contributes to their overall
-                    development.
+                    4. Parental partnership: Modern fathers are increasingly
+                    involved in the day-to-day care of their children. They
+                    actively participate in parenting tasks like feeding,
+                    bathing, changing diapers, and helping with homework. Active
+                    involvement strengthens the bond between fathers and their
+                    children and contributes to their overall development.
                   </li>
                   <li>
                     5. Teaching and education: Fathers have a significant role
@@ -111,7 +125,7 @@ const WhatIsAFather = () => {
               <Box>
                 <List spacing={5}>
                   <li>
-                    1. Building a healthy relationship with the partner: Fathers
+                    6. Building a healthy relationship with the partner: Fathers
                     contribute to a healthy family dynamic by nurturing their
                     relationship with the child's mother or their partner. They
                     collaborate in parenting decisions, share household
@@ -120,7 +134,7 @@ const WhatIsAFather = () => {
                     children.
                   </li>
                   <li>
-                    2. Encouraging independence and self-confidence: Fathers
+                    7. Encouraging independence and self-confidence: Fathers
                     encourage their children to explore their interests, take
                     risks, and develop independence. They provide guidance and
                     support while allowing their children to make their own
@@ -133,13 +147,13 @@ const WhatIsAFather = () => {
                     and meaningful role in their children's lives.
                   </li>
                   <li>
-                    3. Teaching and education: Fathers play a part in their
+                    8. Teaching and education: Fathers play a part in their
                     children's education and intellectual development. They
                     encourage learning, support academic pursuits, and offer
                     guidance in making important life decisions.
                   </li>
                   <li>
-                    4. Disciplinarian and setting boundaries: Fathers contribute
+                    9. Disciplinarian and setting boundaries: Fathers contribute
                     to establishing discipline and setting boundaries for their
                     children. They teach the importance of responsibility,
                     accountability, and appropriate behavior, helping children
@@ -148,7 +162,6 @@ const WhatIsAFather = () => {
                 </List>
               </Box>
             </GridItem>
-
           </Grid>
 
           <CardFooter>

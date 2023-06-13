@@ -2,14 +2,12 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { FormControl, FormLabel, Input, Button, Container } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-import Navbar from "../components/Navbar";
 
 const LoginPage = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   useEffect(() => {
-    console.log({ email, password });
   }, [email, password]);
 
   return (
@@ -37,7 +35,6 @@ const LoginPage = (props) => {
       <Button
         onClick={(e) => {
           e.preventDefault();
-          console.log("test");
 
           axios
             .post("https://capstone-ashen-zeta.vercel.app/login", {
@@ -45,7 +42,6 @@ const LoginPage = (props) => {
               password,
             })
             .then((response) => {
-              console.log(response);
               props.setToken(response.data.token);
             });
 

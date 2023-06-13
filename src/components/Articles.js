@@ -8,7 +8,6 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import Navbar from "../components/Navbar";
 import image1 from "../Cap-images/5 Roles of a Father you must Learn to do Well.png";
 import image2 from "../Cap-images/10 Qualities of a Good Dad.png";
 import image3 from "../Cap-images/Being a Dad The Evolving Role of a Father.png";
@@ -27,7 +26,7 @@ const Articles = () => {
   return (
     <>
       
-      <Card  bg="rgb(225,234,236)">
+      <Card  bg="rgb(225,234,236)" pb={'20'}>
         <SimpleGrid
           spacing={10}
           minChildWidth="400px"

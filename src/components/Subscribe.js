@@ -1,14 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
 import {
-  Box,
   Button,
   Card,
   Flex,
   FormControl,
-  FormHelperText,
-  FormLabel,
-  HStack,
   Heading,
   Input,
   Text,
@@ -18,8 +13,6 @@ import {
 const Subscribe = () => {
   return (
     <>
-      
-
       <Card bg="rgb(225,234,236)" height="60vh" mt="20">
         <VStack justifyContent="center" height="100%" pl="25vw" pr="25vw">
           <Heading as="h1" pb="5" justifyContent="left">
