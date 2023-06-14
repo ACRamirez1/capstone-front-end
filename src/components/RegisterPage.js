@@ -16,7 +16,7 @@ const RegisterPage = (props) => {
   return (
     <>
       <Container>
-        <FormControl isRequired mb="20px" mt="20px">
+        <FormControl isRequired mb="20px" mt="20px" pt={'20'}>
           <FormLabel>Name</FormLabel>
           <Input
             placeholder="Name"

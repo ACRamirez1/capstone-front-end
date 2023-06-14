@@ -49,7 +49,7 @@ const Connect = () => {
                     Come hang out and play a pick up game of ultimate frisbee!
                     All Abilities are welcome! <br></br> For any questions or
                     cancellations,{" "}
-                    <Link color="teal.500" href="#">
+                    <Link color="teal" href="https://www.facebook.com/TheForgeHQTX" isExternal='true'>
                       https://www.facebook.com/TheForgeHQTX
                     </Link>
                   </Td>
@@ -64,7 +64,7 @@ const Connect = () => {
                     Evie Mae's BBQ Wolfforth. No agenda, just time to hang out
                     with good dudes over good food and celebrate the week.
                     <br></br> For any questions or cancellations,{" "}
-                    <Link color="teal.500" href="#">
+                    <Link color="teal" href="https://www.facebook.com/TheForgeHQTX" isExternal='true'>
                       https://www.facebook.com/TheForgeHQTX
                     </Link>
                   </Td>
@@ -78,7 +78,7 @@ const Connect = () => {
                   <Td>
                     Dunbar Lake. 3 Mile walk about. <br></br> For any questions
                     or cancellations,{" "}
-                    <Link color="teal.500" href="#">
+                    <Link color="teal" href="https://www.facebook.com/TheForgeHQTX" isExternal='true'>
                       https://www.facebook.com/TheForgeHQTX
                     </Link>{" "}
                   </Td>
@@ -93,7 +93,7 @@ const Connect = () => {
                     Park in the back, and enter through black door. Come and
                     join with other men as we work through the scriptures!{" "}
                     <br></br> For any questions or cancellations,{" "}
-                    <Link color="teal.500" href="#">
+                    <Link color="teal" href="https://www.facebook.com/TheForgeHQTX" isExternal='true'>
                       https://www.facebook.com/TheForgeHQTX
                     </Link>
                   </Td>

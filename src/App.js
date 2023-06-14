@@ -9,7 +9,6 @@ import RoleOfAFather from "./components/RoleOfAFather";
 import Subscribe from "./components/Subscribe";
 import Connect from "./components/Connect";
 import Navbar from "./components/Navbar";
-import NavbarSub from "./components/NavbarSub";
 
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
       <Navbar />
         {!isLoggedIn ? (
           <Routes>
-            <Route path="/" element={<LoginPage setToken={setToken} />} />
+            <Route path="/" element={<LoginPage setToken={setToken} token={token} />} />
             <Route path="/register" element={<RegisterPage />} />
           </Routes>
         ) : (
@@ -33,7 +32,6 @@ function App() {
             <Route path='/roleofafather' element={<RoleOfAFather token={token} />} />
             <Route path='/subscribe' element={<Subscribe token={token} />} />
             <Route path='/connect' element={<Connect token={token} />} />
-            <Route path='/navbarsub' element={<NavbarSub />} />
           </Routes>
         )}
       </BrowserRouter>

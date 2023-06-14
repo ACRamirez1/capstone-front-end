@@ -25,8 +25,7 @@ import Connect from "./Connect";
 const Articles = () => {
   return (
     <>
-      
-      <Card  bg="rgb(225,234,236)" pb={'20'}>
+      <Card bg="rgb(225,234,236)" pb={"20"}>
         <SimpleGrid
           spacing={10}
           minChildWidth="400px"
@@ -40,6 +39,7 @@ const Articles = () => {
                 src={image1}
                 alt="5 Roles a Father you must Learn to do Well"
                 borderRadius="lg"
+                isExternal
               />
               <Stack mt="6" spacing="3">
                 <Heading size="md">5 Roles of a Father</Heading>
@@ -93,7 +93,9 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Changing roles and responsibilites of Fathers</Heading>
+                <Heading size="md">
+                  Changing roles and responsibilites of Fathers
+                </Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -110,7 +112,9 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Does the Modern Working Father Really Exist? Yes!</Heading>
+                <Heading size="md">
+                  Does the Modern Working Father Really Exist? Yes!
+                </Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -127,7 +131,9 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">How to Be a Good Father: Tips & Advice for Dads</Heading>
+                <Heading size="md">
+                  How to Be a Good Father: Tips & Advice for Dads
+                </Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -144,7 +150,9 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">The Daddy Factor: How Fathers Support Development</Heading>
+                <Heading size="md">
+                  The Daddy Factor: How Fathers Support Development
+                </Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -161,7 +169,9 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">The Importance of a Father in a Child's Life</Heading>
+                <Heading size="md">
+                  The Importance of a Father in a Child's Life
+                </Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -212,11 +222,15 @@ const Articles = () => {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">What are the Three Primary Roles of a Father?</Heading>
+                <Heading size="md">
+                  What are the Three Primary Roles of a Father?
+                </Heading>
                 <Text>
-                  This sofa is perfect for modern tropical spaces, baroque
-                  inspired spaces, earthy toned spaces and for people who love a
-                  chic design with a sprinkle of vintage design.
+                  Through almost every studied culture, fathers have assumed
+                  three primary roles: the protector, the provider, and the
+                  disciplinarian. Before we discuss each of these roles, it is
+                  important to note that in many two-parent families today,
+                  mothers are fulfilling these three roles as much as fathers.
                 </Text>
               </Stack>
             </CardBody>
