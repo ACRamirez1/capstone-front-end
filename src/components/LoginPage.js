@@ -42,7 +42,7 @@ const LoginPage = (props) => {
             e.preventDefault();
 
             axios
-              .post("https://capstone-ashen-zeta.vercel.app/login", {
+              .post(`${process.env.REACT_APP_BACKEND_URL}/login`, {
                 email,
                 password,
               })

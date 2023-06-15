@@ -23,6 +23,7 @@ function App() {
         {!isLoggedIn ? (
           <Routes>
             <Route path="/" element={<LoginPage setToken={setToken} token={token} />} />
+            <Route path="/login" element={<LoginPage setToken={setToken} token={token} />} />
             <Route path="/register" element={<RegisterPage />} />
           </Routes>
         ) : (

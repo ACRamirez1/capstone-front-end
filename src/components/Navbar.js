@@ -18,9 +18,9 @@ const Navbar = () => {
   const deleteCookie = () => {
     if (cookies["loggedin"]) {
       document.cookie = "loggedin=; max-age=0";
-      navigate("/login");
+      navigate("/");
     } else {
-      navigate("/login");
+      navigate("/");
     }
   };
 
@@ -38,31 +38,19 @@ const Navbar = () => {
 
   return (
     <Flex as="nav" alignItems="center" ml="15vw" mr="15vw">
-      {/* <Heading as="h1" fontSize={80} color={"teal"}>
-        Fatherhood
-        {cookies["loggedin"] ? (
-          <ChakraLink
-            as={RouterLink}
-            to="/articles"
-            color={"teal"}
-          ></ChakraLink>
-        ) : null}
-      </Heading> */}
-
-{cookies["loggedin"] ? (
-  <>
-    <Heading as="h1" fontSize={80} color="teal">
-      
-      <ChakraLink as={RouterLink} to="/articles" color="teal">Fatherhood</ChakraLink>
-    </Heading>
-  </>
-) : (
-  <Heading as="h1" fontSize={80} color="teal">
-    Fatherhood
-  </Heading>
-)}
-
-
+      {cookies["loggedin"] ? (
+        <>
+          <Heading as="h1" fontSize={80} color="teal">
+            <ChakraLink as={RouterLink} to="/articles" color="teal">
+              Fatherhood
+            </ChakraLink>
+          </Heading>
+        </>
+      ) : (
+        <Heading as="h1" fontSize={80} color="teal">
+          Fatherhood
+        </Heading>
+      )}
 
       <Spacer />
 

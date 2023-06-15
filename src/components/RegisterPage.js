@@ -48,7 +48,7 @@ const RegisterPage = (props) => {
           onClick={(e) => {
             e.preventDefault();
             axios
-              .post("https://capstone-ashen-zeta.vercel.app/register", {
+              .post(`${process.env.REACT_APP_BACKEND_URL}/register`, {
                 name,
                 email,
                 password,

@@ -13,7 +13,7 @@ const Quotes = (props) => {
 
   useEffect(() => {
     axios
-      .get("https://capstone-ashen-zeta.vercel.app/quotes", {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/quotes`, {
         headers: {
           Authorization: `Bearer ${props.token}`,
         },
