@@ -7,19 +7,21 @@ import {
   Button,
   Container,
 } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const LoginPage = (props) => {
-  console.log(props)
+  console.log(props);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
 
   useEffect(() => {}, [email, password]);
 
   return (
     <>
       <Container>
-        <FormControl isRequired mb="20px" mt="20px" pt={'20'}>
+        <FormControl isRequired mb="20px" mt="20px" pt={"20"}>
           <FormLabel>Email</FormLabel>
           <Input
             placeholder="email"
@@ -49,10 +51,10 @@ const LoginPage = (props) => {
               .then((response) => {
                 props.setToken(response.data.token);
                 document.cookie = "loggedin=true; max-age=60*1000";
-                
               })
-              .then ((response) => {
+              .then((response) => {
                 document.cookie = `token=${props.token}; max-age=60*1000`;
+                navigate("/");
               });
 
             setEmail("");

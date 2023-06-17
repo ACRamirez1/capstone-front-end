@@ -19,7 +19,7 @@ function App() {
       <>
       
       <BrowserRouter>
-      <Navbar />
+      <Navbar setToken={setToken} token={token} />
         {!isLoggedIn ? (
           <Routes>
             <Route path="/" element={<LoginPage setToken={setToken} token={token} />} />

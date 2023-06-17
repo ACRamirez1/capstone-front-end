@@ -10,7 +10,7 @@ import { Link as RouterLink, useNavigate } from "react-router-dom";
 import React from "react";
 import cookie from "cookie";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const navigate = useNavigate();
 
   const cookies = cookie.parse(document.cookie);
@@ -22,6 +22,7 @@ const Navbar = () => {
     } else {
       navigate("/");
     }
+    props.setToken("")
   };
 
   const fatherClick = () => {
