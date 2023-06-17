@@ -9,7 +9,7 @@ import RoleOfAFather from "./components/RoleOfAFather";
 import Subscribe from "./components/Subscribe";
 import Connect from "./components/Connect";
 import Navbar from "./components/Navbar";
-
+import NavbarSub from "./components/NavbarSub";
 
 function App() {
   const [token, setToken] = useState("");
@@ -17,25 +17,45 @@ function App() {
   return (
     <div className="App">
       <>
-      
-      <BrowserRouter>
-      <Navbar setToken={setToken} token={token} />
-        {!isLoggedIn ? (
-          <Routes>
-            <Route path="/" element={<LoginPage setToken={setToken} token={token} />} />
-            <Route path="/login" element={<LoginPage setToken={setToken} token={token} />} />
-            <Route path="/register" element={<RegisterPage />} />
-          </Routes>
-        ) : (
-          <Routes>
-            <Route path="/" element={<Quotes token={token} />} />
-            <Route path='/articles' element={<Articles token={token} />} />
-            <Route path='/roleofafather' element={<RoleOfAFather token={token} />} />
-            <Route path='/subscribe' element={<Subscribe token={token} />} />
-            <Route path='/connect' element={<Connect token={token} />} />
-          </Routes>
-        )}
-      </BrowserRouter>
+        <BrowserRouter>
+          {!isLoggedIn && (
+            <>
+              <NavbarSub />
+
+              <Routes>
+                <Route
+                  path="/"
+                  element={<LoginPage setToken={setToken} token={token} />}
+                />
+                <Route
+                  path="/login"
+                  element={<LoginPage setToken={setToken} token={token} />}
+                />
+                <Route path="/register" element={<RegisterPage />} />
+              </Routes>
+            </>
+          )}
+
+          {isLoggedIn && (
+            <>
+              <Navbar setToken={setToken} token={token} />
+
+              <Routes>
+                <Route path="/" element={<Quotes token={token} />} />
+                <Route path="/articles" element={<Articles token={token} />} />
+                <Route
+                  path="/roleofafather"
+                  element={<RoleOfAFather token={token} />}
+                />
+                <Route
+                  path="/subscribe"
+                  element={<Subscribe token={token} />}
+                />
+                <Route path="/connect" element={<Connect token={token} />} />
+              </Routes>
+            </>
+          )}
+        </BrowserRouter>
       </>
     </div>
   );
